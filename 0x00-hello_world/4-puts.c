@@ -7,8 +7,9 @@
  *
  *   *
  *
- *    * Return: Always 0 (Success)
- *     */
+ *    * Return: Always 0 (Successi)
+ *     
+ */
 
 int main(void)
 
