@@ -1,13 +1,8 @@
 #include <stdio.h>
 
-
-
 /**
- *  * main - Entry point
- *
- *   *
- *
- *    * Return: Always 0 (Successi)     
+ ** main - Entry point
+ ** Return: Always 0 (Successi)     
  */
 
 int main(void)
