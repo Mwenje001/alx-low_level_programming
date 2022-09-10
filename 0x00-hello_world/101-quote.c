@@ -5,7 +5,7 @@
 
 
 /*
- *  * main - Entry point
+ *  * main Description - Entry point
  *
  *  * Description: Prints "and that piece of art is useful..." without puts
  *
