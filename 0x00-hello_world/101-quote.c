@@ -5,8 +5,8 @@
  *
  *   *
  *
- *    * Description: Prints "and that piece of art is useful..." without puts
- *     * Return: 1
+ *    * Prints "and that piece of art is useful..." without puts
+ *    * Return: 1
 */
 
 int main(void)
