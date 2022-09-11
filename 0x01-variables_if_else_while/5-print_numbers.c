@@ -1,11 +1,9 @@
 #include <stdio.h>
 
-
-
 /**
- *  * main - prints all single digit numbers of base
+ *  * main - Entry point
  *
- *   * 10 starting from 0, followed by a new line
+ *   *
  *
  *    * Return: Always 0 (Success)
  */
@@ -14,13 +12,17 @@ int main(void)
 
 {
 
-	int n;
+	int r;
 
 
 
-	for (n = 0; n < 10; n++)
+	for (r = 0; r <= 9; r++)
 
-		printf("%d", n);
+	{
+
+		printf("%d", r);
+
+	}
 
 		printf("\n");
 
