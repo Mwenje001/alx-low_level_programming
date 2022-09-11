@@ -1,36 +1,42 @@
 #include <stdio.h>
 
+#include <unistd.h>
+
 /**
  *  * main - Entry point
  *
- *   *
+ *   * Description: Print base 16 numbers
  *
- *    * Return: Always 0 (Success)
+ *    * Return: Always 0 (success)
  */
 
 int main(void)
 
 {
 
-	int z;
+	char c;
+
+	char d = '0';
 
 
 
-	for (z = 48; z <= 57; z++)
+			while (d <= '9')
 
-		{
+				{
 
-		putchar(z);
+				putchar(d);
 
-		}
+				d++;
 
-	for (z = 97; z <= 102;z++)
+				}
 
-		{	
+			for (c = 'a'; c <= 'f'; c++)
 
-		putchar(z)
+			{
 
-		}
+			putchar(c);
+			
+			}
 
 		putchar('\n');
 
