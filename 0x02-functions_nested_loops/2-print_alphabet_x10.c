@@ -7,7 +7,7 @@
  *
  *  *
  *
- *  * Description: Prints the alphabet with _putchar ten times
+ *  * Prints - the alphabet with _putchar ten times
  *
  *  *
  *

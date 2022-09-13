@@ -7,7 +7,7 @@
  *
  *   *
  *
- *   * Description: Prints the alphabet with _putchar
+ *   * Prints - the alphabet with _putchar
  *
  *   *
  *
