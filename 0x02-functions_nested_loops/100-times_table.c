@@ -3,8 +3,8 @@
 /**
  * *print_times_table - prints the  times table with
  * *Return: returns nothing
+ * *@n: parameter
  */
-
 void print_times_table(int n)
 {
 	int digit, mult, result;
