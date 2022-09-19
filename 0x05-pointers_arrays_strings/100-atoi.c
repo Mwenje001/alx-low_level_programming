@@ -6,44 +6,33 @@
  *    * Return: Always 0.
  */
 
-int main(void)
+int _atoi(char *s)
 
 {
 
-	int n;
+	int i;
 
-	n = _atoi("98");
+	int res = 0;
 
-	printf("%d\n", n);
+	int sig = -1;
 
-	n = _atoi("-402");
+	int brk = 0;
 
-	printf("%d\n", n);
+	for (i = 0; s[i] != '\0'; i++)
+	{
+	if (s[i] == '-')
+		sig = sig * -1;
+	if (s[i] >= '0' && s[i] <= '9')
+		{
+		res = res * 10;
+		res -= (s[i] - '0');
+		brk = 1;
+		}
+	else if (brk == 1)
+		break;
+	}
+	res = sig * res;
 
-	n = _atoi("          ------++++++-----+++++--98");
-
-	printf("%d\n", n);
-
-	n = _atoi("214748364");
-
-	printf("%d\n", n);
-
-	n = _atoi("0");
-
-	printf("%d\n", n);
-
-	n = _atoi("Suite 402");
-
-	printf("%d\n", n);
-
-	n = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
-
-	printf("%d\n", n);
-
-	n = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
-
-	printf("%d\n", n);
-	
-	return (0);
+	return (res);
 
 }
