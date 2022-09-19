@@ -1,40 +1,23 @@
 #include "main.h"
 #include <stdio.h>
 
+
 /**
- *   * _strncpy - cpoies n bytes of src to the dest string
- *   * @dest: string to copy to
- *   * @src: string being copied
- *   * @n: largest number of bytes to copy
- *   * Return: address of dest
+ *  * _strlen - find the length of a string
+ *   * @s: pointer to the string to check
+ *  * Return: void
  */
 
-char *_strncpy(char *dest, char *src, int n)
+int _strlen(char *s)
 
 {
 
-	int i;
+	int i = 0;
 
-	i = 0;
+	while (s[i])
 
-	while (i < n && *(src + i))
+			i++;
 
-	{
-
-	*(dest + i) = *(src + i);
-
-	i++;
-	}
-	while (i < n)
-
-		{
-
-		*(dest + i) = '\0';
-
-		i++;
-
-		}
-
-	return (dest);
+	return (i);
 
 }
