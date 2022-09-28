@@ -3,39 +3,39 @@
 
 
 /**
- * * main - check the code for Holberton School students.
- * * Return: Always 0.
+ * * _sqrt_recursion - returns the natural square root of a number
+ * * @n: number to be used
+ * * Return: the square root of n
  */
 
-int main(void)
 
+int _sqrt_recursion(int n)
 {
-	int r;
 
-	r = _sqrt_recursion(1);
+	if (n == 0 || n == 1)
 
-	printf("%d\n", r);
+		return (n);
 
-		r = _sqrt_recursion(1024);
+	return (_sqrt(0, n));
 
-	printf("%d\n", r);
+}
 
-		r = _sqrt_recursion(16);
+/**
+ * * _sqrt - returns the square root of a number
+ * * @n: test number
+ * * @x: squared number
+ * * Return: the square root of n
+ */
 
-	printf("%d\n", r);
+int _sqrt(int n, int x)
+{
+	if (n > x / 2)
 
-		r = _sqrt_recursion(17);
+		return (-1);
 
-	printf("%d\n", r);
+	else if (n * n == x)
 
-		r = _sqrt_recursion(25);
+		return (n);
 
-	printf("%d\n", r);
-
-		r = _sqrt_recursion(-1);
-
-	printf("%d\n", r);
-
-	return (0);
-
+	return (_sqrt(n + 1, x));
 }
