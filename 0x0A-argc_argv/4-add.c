@@ -40,7 +40,7 @@ int main(int argc, char const *argv[])
 
 	{
 
-	if (isInteger(argv[argc]))
+		if (isInteger(argv[argc]))
 
 		{
 
