@@ -54,7 +54,7 @@ int main(int argc, char const *argv[])
 
 		{
 
-			if (i >= coins[coin])
+				if (i >= coins[coin])
 
 				{
 					i -= coins[coin];
