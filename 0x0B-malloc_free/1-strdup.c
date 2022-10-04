@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 
 /**
@@ -18,10 +19,9 @@ char *_strdup(char *str)
 	int index, len;
 
 	if (str == NULL)
-
 		return (NULL);
 
-	for (index = 0; str[index]; index++)
+		for (index = 0; str[index]; index++)
 
 					len++;
 
