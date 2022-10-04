@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 
 /**
@@ -13,32 +12,27 @@
  */
 
 char *_strdup(char *str)
-{
-	char *cpy;
 
-	int index, len;
+{
+	char *duplicate;
+
+	int index, len = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-		for (index = 0; str[index]; index++)
+	for (index = 0; str[index]; index++)
+		len++;
 
-					len++;
+	duplicate = malloc(sizeof(char) * (len + 1));
 
-	cpy = malloc(sizeof(char) * (len + 1));
-
-	if (cpy == NULL)
-
+	if (duplicate == NULL)
 		return (NULL);
 
 	for (index = 0; str[index]; index++)
+		duplicate[index] = str[index];
 
-	{
+	duplicate[len] = '\0';
 
-		cpy[index] = str[index];
-
-	}
-	cpy[len] = '\0';
-
-	return (cpy);
+	return (duplicate);
 }

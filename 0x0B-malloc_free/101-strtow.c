@@ -92,7 +92,7 @@ char **strtow(char *str)
 				free(strings[w]);
 
 			free(strings);
-			return (NULL);		
+			return (NULL);
 		}
 
 		for (l = 0; l < letters; l++)
