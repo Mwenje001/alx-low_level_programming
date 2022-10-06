@@ -1,35 +1,31 @@
-#include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
- * Return: Nothing.
+ * _calloc - allocates memory for an array, using malloc, and initializes to 0
+ * @nmemb: number of elements of the array
+ * @size: size of each element of the array
+ * Return: pointer to the allocated memory (SUCCESS) or
+ * NULL if @nmemb or @size is 0 (FAILURE) or
+ * NULL if insufficient memory was available (FAILURE)
  */
 
-void simple_print_buffer(char *buffer, unsigned int size)
-{
-	char *block;
+void *_calloc(unsigned int nmemb, unsigned int size)
 
+{
 	unsigned int i;
 
+	char *ptr;
+
 	if (nmemb == 0 || size == 0)
-		return (NULL);
+		return ('\0');
 
-	block = malloc(nmemb * size);
+	ptr = malloc(nmemb * size);
 
-	if (block != NULL)
+	if (ptr == NULL)
+		return ('\0');
 
-	{
-		for (i = 0; i < (nmemb * size); i++)
-			block[i] = 0;
+	for (i = 0; i < nmemb * size; i++)
+		ptr[i] = 0;
 
-		return (block);
-	}
-
-	else
-		return (NULL);
+	return ((void *)ptr);
 }
