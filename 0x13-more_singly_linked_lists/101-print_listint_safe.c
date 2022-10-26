@@ -1,3 +1,8 @@
+/*
+ * File: 101-print_listint_safe.c
+ * Auth: Gabriel Mwenje 
+ */
+
 #include "lists.h"
 #include <stdio.h>
 
@@ -33,9 +38,8 @@ size_t looped_listint_len(const listint_t *head)
 				tortoise = tortoise->next;
 				hare = hare->next;
 			}
-
-		tortoise = tortoise->next;
-		while (tortoise != hare)
+			tortoise = tortoise->next;
+			while (tortoise != hare)
 			{
 				nodes++;
 				tortoise = tortoise->next;
