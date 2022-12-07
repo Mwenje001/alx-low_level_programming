@@ -1,24 +1,29 @@
 #include "main.h"
-#include <stdio.h>
-
-
 /**
- *  * main - check the code for Holberton School students.
- *  * Return: Always 0.
+ * leet - encodes a string into 1337
+ * @s: input string.
+ * Return: the pointer to dest.
  */
-int main(void)
+
+char *leet(char *s)
 {
-	char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
+	int count = 0, i;
+	int lower_letters[] = {97, 101, 111, 116, 108};
+	int upper_letters[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	char *p;
+	while (*(s + count) != '\0')
+	{
+		for (i = 0; i < 5; i++)
+		{
+			if (*(s + count) == lower_letters[i] || *(s + count) == upper_letters[i])
+			{
+				*(s + count) = numbers[i];
+				break;
+			}
+		}
+		count++;
+	}
 
-
-
-	p = leet(s);
-
-	printf("%s", p);
-
-	printf("%s", s);
-
-	return (0);
+	return (s);
 }
